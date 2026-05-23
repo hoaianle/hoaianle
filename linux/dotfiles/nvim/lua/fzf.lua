@@ -4,3 +4,4 @@ plugins.install('junegunn/fzf.vim')
 vim.env.BAT_THEME = 'base16'
 -- Ctrl + P
 vim.keymap.set('n', '<C-p>', ':Files<CR>', { silent = true })
+vim.keymap.set('n', '<leader>f', ':Buffers<CR>', { silent = true })

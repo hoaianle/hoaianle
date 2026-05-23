@@ -7,3 +7,7 @@ vim.opt.smartcase = true
 vim.opt.hlsearch = false
 
 require('theme')
+require('fzf')
+
+-- Ctrl + P
+vim.keymap.set('n', '<C-p>', ':Files<CR>', { silent = true })

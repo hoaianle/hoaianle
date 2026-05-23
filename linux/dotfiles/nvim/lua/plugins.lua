@@ -25,8 +25,13 @@ function M.install(repo)
     -- Dynamically add the new package to Neovim's runtime paths
     vim.cmd("packadd! " .. plugin_name)
     
-    -- Clear the screen entirely when done
+    -- 1. Show the success message clearly
     vim.cmd('redraw')
+    print("Successfully installed " .. plugin_name .. "!")
+    vim.cmd('redraw') -- Force the success text to render immediately
+    
+    vim.loop.sleep(500)
+    
     vim.api.nvim_command('echo ""')
   end
 end

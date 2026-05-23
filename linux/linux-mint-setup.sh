@@ -32,6 +32,7 @@ sudo apt install -y neovim \
     alacritty \
     xdotool \
     tmux \
+    ripgrep \
     ffmpeg
 
 # GUI apps that doesn't have flatpak official Flatpak or just make sense to install system package

@@ -6,10 +6,4 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.hlsearch = false
 
--- https://github.com/navarasu/onedark.nvim
-require('onedark').setup {
-    style = 'dark',
-    transparent = true,
-}
-
-require('onedark').load()
+require('theme')

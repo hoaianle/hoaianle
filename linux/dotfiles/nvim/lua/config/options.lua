@@ -6,8 +6,6 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.hlsearch = false
 
-vim.g.mapleader = " "
-
 -- Color theme integration for FZF and Batcat
 vim.env.BAT_THEME = "base16"
 

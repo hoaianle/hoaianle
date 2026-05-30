@@ -4,3 +4,5 @@
 	signingkey = E63FB77AE2BA825E
 [commit]
     gpgsign = true
+[push]
+	autoSetupRemote = true

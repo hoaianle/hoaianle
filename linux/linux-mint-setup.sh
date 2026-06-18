@@ -93,3 +93,5 @@ cp $SCRIPT_DIR/shared/launch-alacritty.sh ~/.local/bin/
 cp /usr/share/applications/Alacritty.desktop ~/.local/share/applications
 sed -i "s|^Exec=alacritty|Exec=bash -c ~/.local/bin/launch-alacritty.sh|g" ~/.local/share/applications/Alacritty.desktop
 sed -i "s|^StartupNotify=true|StartupNotify=false|g" ~/.local/share/applications/Alacritty.desktop
+
+cp $SCRIPT_DIR/shared/hoaian.sh ~/.local/bin/

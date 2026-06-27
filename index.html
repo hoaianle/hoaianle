@@ -1,184 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Le Hoai An — Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            type="image/jpeg"
+            href="https://avatars.githubusercontent.com/u/98139595?v=4"
+        />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-inner">
+                <a href="#" class="nav-avatar">
+                    <img src="https://avatars.githubusercontent.com/u/98139595?v=4" alt="avatar">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lê Hoài Ân</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-</head>
-<style>
-    * {
-        --color-blue: rgb(56, 132, 247);
-        --color-white: rgb(255, 255, 255);
-        --color-black: rgb(18, 19, 20);
-    }
+        <main>
+            <section id="hero">
+                <h1>Lê Hoài Ân</h1>
+                <p class="aka">Kenny Le</p>
+                <p class="subtitle">Software Engineer</p>
+                <p class="tagline">
+                    I solve problems, then make them open source.
+                </p>
+                <a href="#contact" class="btn">Get in touch</a>
+            </section>
 
-    body {
-        font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-            sans-serif;
-        font-size: calc(10px + 0.33vw);
-        -webkit-font-smoothing: antialiased;
-        padding: 5vh 10vw;
-        color: #121314;
-    }
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    Software engineer based in Vietnam, focused on web
+                    development. I started in 2022 with front-end (React,
+                    TypeScript, CSS) and later picked up back-end work with
+                    Node.js, PHP and Go when needed.
+                </p>
+            </section>
 
-    h1 {
-        font-size: 2.5em;
-        font-weight: 500;
-        margin-bottom: 0;
-    }
+            <section id="experience">
+                <h2>Experience</h2>
 
-    p {
-        /* font-size: 1.6em; */
-        font-weight: 300;
-        line-height: 1.4;
-        /* max-width: 28em; */
-    }
+                <div class="card">
+                    <div class="card-head">
+                        <h3>GoMedia (goahead.sg)</h3>
+                        <span class="role">Frontend Developer</span>
+                        <span class="date">Mar 2026 – Present</span>
+                    </div>
+                    <p class="tech">TypeScript, React, NextJS</p>
+                    <ul>
+                        <li>
+                            Maintain and develop monorepo web applications using
+                            Next.js and Turborepo.
+                        </li>
+                        <li>
+                            Diagnose and resolve race conditions causing
+                            incorrect data rendering and UI crashes.
+                        </li>
+                        <li>
+                            Collaborate directly with the Business, SEO, and
+                            Customer teams to identify issues and deliver
+                            effective solutions.
+                        </li>
+                        <li>
+                            Built a custom GrapesJS plugin that enables users to
+                            interact with components (such as opening and
+                            closing navigation menus and collapsible sections)
+                            in the website builder, providing a native HTML
+                            website editing experience.
+                        </li>
+                    </ul>
+                </div>
 
-    a {
-        text-decoration: none;
-        white-space: nowrap;
-        color: var(--color-black);
-        position: relative;
-    }
+                <div class="card">
+                    <div class="card-head">
+                        <h3>Cosan Vietnam</h3>
+                        <span class="role">Software Engineer (Freelance)</span>
+                        <span class="date">Sep 2025 – Nov 2025</span>
+                    </div>
+                    <p class="tech">
+                        PHP, Laravel, Node.js, Socket.IO, MariaDB
+                    </p>
+                    <ul>
+                        <li>
+                            Built a custom Laravel module integrated into an
+                            existing PHP CRM, improving maintainability.
+                        </li>
+                        <li>
+                            Built an API that classifies 60K customers and 80K
+                            orders in under 2 seconds.
+                        </li>
+                        <li>
+                            Built a real-time WebSocket service for order and
+                            notification broadcasting.
+                        </li>
+                    </ul>
+                </div>
 
-    a:hover {
-        transition: .2s ease;
-        color: var(--color-white);
-    }
+                <div class="card">
+                    <div class="card-head">
+                        <h3>TNKAS</h3>
+                        <span class="role">Software Engineer Intern</span>
+                        <span class="date">Aug 2023 – Dec 2024</span>
+                    </div>
+                    <p class="tech">PHP, Laravel, MariaDB</p>
+                    <ul>
+                        <li>
+                            Developed Laravel modules to bridge two systems,
+                            enabling cross-platform settings sync.
+                        </li>
+                        <li>
+                            Migrated the Timesheet module to an API-based
+                            architecture for multi-platform access.
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-    a:after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 90%;
-        left: -0.1em;
-        right: -0.1em;
-        bottom: 0;
-        transition: top .2s ease;
-        background-color: var(--color-blue);
-    }
+            <section id="projects">
+                <h2>Projects</h2>
 
-    a:hover:after {
-        top: 0%;
-    }
+                <div class="card">
+                    <div class="card-head">
+                        <h3>
+                            <a
+                                href="https://github.com/hoaianle/Instagram-Downloader"
+                                target="_blank"
+                                >Instagram Downloader</a
+                            >
+                        </h3>
+                        <span class="date">Sep 2022 – Present</span>
+                    </div>
+                    <p class="tech">
+                        JavaScript, CSS, Chrome Extensions, React Fiber
+                    </p>
+                    <ul>
+                        <li>
+                            Chrome extension to download photos/videos from
+                            Instagram posts, reels, stories, including private
+                            profiles.
+                        </li>
+                        <li>
+                            Built with vanilla JS for a lightweight experience.
+                            Uses React Fiber to access content without API
+                            calls.
+                        </li>
+                    </ul>
+                </div>
 
-    section:last-of-type>p>a {
-        margin-right: 5px;
-    }
-</style>
+                <div class="card">
+                    <div class="card-head">
+                        <h3>
+                            <a
+                                href="https://github.com/hoaianle/college-quiz-app"
+                                target="_blank"
+                                >College Quiz App</a
+                            >
+                        </h3>
+                        <span class="date">Sep 2023 – May 2025</span>
+                    </div>
+                    <p class="tech">
+                        PHP, Laravel, TypeScript, React, MariaDB, Docker, Nginx
+                    </p>
+                    <ul>
+                        <li>
+                            API-based quiz app with Laravel + React and a
+                            rich-text editor for image-enhanced questions.
+                        </li>
+                        <li>
+                            Configurable difficulty levels, randomized
+                            question/answer order to prevent cheating.
+                        </li>
+                        <li>
+                            Real-time answer sync across devices with
+                            auto-submit on time expiry.
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-<body>
-    <!-- Summary -->
-    <section>
-        <h1>Lê Hoài Ân (Kenny Le)</h1>
-        <p>I'm a software engineer based in Vietnam, primarily focused on web development.</p>
-        <div style="width: 250px; height: 250px; border-radius: 15px; overflow: hidden;">
-            <img style="width: 100%; border-radius: 15px;" src="https://avatars.githubusercontent.com/u/98139595"
-                alt="profile">
-        </div>
-        <p>
-            I started learning front-end web development and built some personal projects in 2022.
-            I use React with Typescript most of the time with pure CSS or CSS modules to optimize speed.
-            When I couldn't find anyone to handle the back-end development, I decided to do it myself.
-            I have experience in NodeJS and PHP on the back-end side, mostly Express, Fastify and Laravel.
-        </p>
-    </section>
-    <!-- Work Experiences -->
-    <section>
-        <h2>Work Experiences</h2>
-        <h3 style="display: inline;">Cosan Vietnam</h3>
-        <span> - Ho Chi Minh City, Vietnam</span>
-        <br>
-        <span>Software Engineer | Freelance</span>
-        (<time datetime="2025-09">2025/09</time> – <time datetime="2025-11">2025/11</time>)
-        <br>
-        <p>
-            Tech stack: PHP, Laravel, NodeJS, Socket.IO, MariaDB
-        </p>
-        <p>What I have done</p>
-        <ul>
-            <li>Developed a custom module based on Laravel framework and integrated into an existing vanilla PHP CRM
-                system, improving maintainability and speed up development process.</li>
-            <li>Built an API to automate classify customers, processing nearly 60,000 customers and 80,000 orders in
-                under 2 seconds, optimizing system efficiency.</li>
-            <li>Developed an external real-time WebSocket service to broadcast various system notifications (including
-                orders, calling indicator and other updates) to employees, improving communication and responsiveness.
-            </li>
-        </ul>
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-links">
+                    <a href="mailto:lehoaian022003@gmail.com">Email</a>
+                    <a href="https://github.com/hoaianle" target="_blank"
+                        >GitHub</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/hoaian2/"
+                        target="_blank"
+                        >LinkedIn</a
+                    >
+                </div>
+            </section>
+        </main>
 
-        <h3 style="display: inline;">TNKAS</h3>
-        <span> - Phu Yen, Vietnam</span>
-        <br>
-        <span>Software Engineer Intern</span>
-        (<time datetime="2023-08">2023/08</time> – <time datetime="2024-12">2024/12</time>)
-        <p>
-            Tech stack: PHP, Laravel, MariaDB
-        </p>
-        <p>What I have done</p>
-        <ul>
-            <li>Developed Laravel modules to integrate two systems, allow users to update settings without login into 2
-                websites at the same time.</li>
-            <li>Migrated the Timesheet web module to an API-based architecture, enabling seamless access and
-                functionality across platforms.</li>
-        </ul>
-    </section>
-    <!-- Personal Projects -->
-    <section>
-        <h2>Personal Projects</h2>
-        <h3>
-            <a href="https://github.com/hoaianle/Instagram-Downloader" target="_blank">
-                Instagram Downloader
-            </a>
-        </h3>
-        <time datetime="2022-09">2022/09</time> –
-        <time datetime="2026-02">Present</time>
-        <br>
-        <p>
-            Tech stack: JavaScript, CSS, Chrome Manifest V3, React Fiber
-        </p>
-        <p>What I have done</p>
-        <ul>
-            <li>Chrome extension, allows users to download photos and videos from Instagram posts, tv, reels, stories,
-                including private profiles.</li>
-            <li>Built with Vanilla JavaScript, providing a lightweight and seamless user experience.</li>
-            <li>Leverages React Fiber to access content directly without making API calls.</li>
-        </ul>
-
-        <h3>
-            <a href="https://github.com/hoaianle/college-quiz-app" target="_blank">
-                College Quiz App
-            </a>
-        </h3>
-        <time datetime="2023-09">2023/09</time> –
-        <time datetime="2025-05">2025/05</time>
-        <br>
-        <p>
-            Tech stack: PHP, Laravel, TypeScript, React, CSS Module, MariaDB, Docker, Nginx
-        </p>
-        <p>What I have done</p>
-        <ul>
-            <li>Quiz web app API-based architecture for school built with Laravel, React, and MariaDB.</li>
-            <li>Rich text editor included, allowing the teacher to create questions with images.</li>
-            <li>Allow choosing the difficulty level when the teacher creates exams. Random order questions in the exam
-                along with their answers when students take exams, making it harder for students to cheat.</li>
-            <li>Sync answers real-time, allowing students to switch devices when they have problems. Auto submit answers
-                when exam time is over.</li>
-        </ul>
-    </section>
-    <!-- Contact -->
-    <section>
-        <h2>Contact</h2>
-        <p>
-            <a href="mailto:lehoaian022003@gmail.com">Email</a>
-            <a href="https://github.com/hoaianle" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/hoaian2/" target="_blank">LinkedIn</a>
-        </p>
-    </section>
-</body>
-
+        <footer>
+            <p>&copy; 2026 Le Hoai An</p>
+        </footer>
+    </body>
 </html>
